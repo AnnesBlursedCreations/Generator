@@ -51,7 +51,7 @@ function get_attributes(headers) {
 function create_character() {
     let determiner = 'a'
     let character_data = get_attributes(character_headers);
-    let output = `<p>You are ${determiner} <span id="adjective">${character_data.adjective}</span> <span id="race">${to_title_case(character_data.race)}</span> <span id="character_class">${to_title_case(character_data.character_class)}</span> from a <span id="origin"><span id="origin">${character_data.origin}</span>who <span id="who">${character_data.who}</span>.</p>`;
+    let output = `<p>You are ${determiner} <span id="adjective">${character_data.adjective}</span> <span id="race">${to_title_case(character_data.race)}</span> <span id="character_class">${to_title_case(character_data.character_class)}</span> from <span id="origin"><span id="origin">${character_data.origin}</span>who <span id="who">${character_data.who}</span>.</p>`;
     document.getElementById("printer").innerHTML = output;
 }
 
