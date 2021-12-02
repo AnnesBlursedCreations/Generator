@@ -1,47 +1,45 @@
 body {
-    background-color:#FFFFF;
-background: url("/RGAheader.gif") no-repeat top center;
-
+    background-color:#008037;
     margin: 0px auto;
     overflow: hidden;
     font-size: 50px;
-    font-family: "Luminari" "Times new roman";
+    font-family: "Luminari", "Times new roman";
 }
 
 p {
-    color: #000;
+    color: #FFFFFF;
 }
 
 span#adjective {
-    color: #26580F;
+    color: #99CC63;
 }
 span#race {
-    color: #26580F;
+    color: #99CC63;
 }
 span#character_class {
-    color: #26580F;
+    color: #99CC63;
 }
 span#origin {
-    color: #26580F;
+    color: #99CC63;
 }
 span#who {
-    color: #26580F;
+    color: #99CC63;
 }
 span#sentimental_magic_item_d100 {
-    color: #26580F;
+    color: #99CC63;
 }
 span#magical_item {
-    color: #26580F;
+    color: #99CC63;
 }
 span#atmosphere {
-    color: #26580F;
+    color: #99CC63;
 }
 span#primary {
-    color: #26580F;
+    color: #99CC63;
 }
 span#secondary {
-    color: #26580F;
+    color: #99CC63;
 }
 span#ground {
-    color: #26580F;
+    color: #99CC63;
 }
