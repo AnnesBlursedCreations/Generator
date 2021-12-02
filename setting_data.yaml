@@ -1,0 +1,87 @@
+# From: http://www.true-magic.com/games/stagemaker.php
+
+atmosphere:
+-   Misty
+-   Windy
+-   Stormy
+-   Tempestuous
+-   Clear and calm
+-   Humid
+-   Frigid
+-   Cold and damp
+-   Electrically or magically charged
+-   Unnaturally dark and shadowy
+
+primary:
+-   A cluster of large boulders
+-   A towering tree
+-   A well
+-   An ancient ruined structure
+-   An ancient well preserved structure
+-   A temple
+-   A wide stretch of bare dead ground
+-   A graveyard
+-   An abandoned battlefield
+-   A park
+-   A wide open field
+-   A high mountain
+-   A cave
+-   A small village
+-   A labyrinth
+-   A volcano
+-   A river that runs backwards
+
+secondary:
+-   A scattering of stones
+-   Holes in the ground
+-   Signs of ancient civilization
+-   A shrine
+-   Patches of bare ground
+-   A littering of bones
+-   Abandoned human belongings
+-   A grassy clearing
+-   Low rounded hills
+-   Strange objects embedded in the ground
+
+trees:
+-   Tall pines
+-   Short pines
+-   Bushy firs
+-   Spruce
+-   The. Larch.
+-   Low and leafy with spreading shady branches
+-   Gnarled and twisted
+-   Ancient and hung with moss
+-   Dead and barren
+-   Weeping willows
+-   Birch
+-   Cypress
+-   Redwood
+-   Blossoming fruit-trees
+-   Ripe fruit-trees
+-   Date palms
+-   Fan palms
+-   Cactus-like
+-   None
+-   None
+-   None
+-   None
+-   None
+
+ground:
+-   Moss
+-   Sand
+-   Peat
+-   Mud
+-   Dead leaves
+-   Tall grass
+-   Flowers
+-   Tangled underbrush
+-   Dirt and small stones
+-   Gravel
+-   Countless tiny sharp crystals
+-   Clover
+-   Various weeds
+-   Snow
+-   Ice
+-   Snow and ice
