@@ -58,7 +58,7 @@ function create_character() {
 
 function create_items() {
     let item_data = get_attributes(item_headers);
-    let output = `<p>You have <span id="sentimental_magic_item_d100">${item_data['sentimental_magic_item_d100']}</span><br /><br />and<br /><br /><span id="magical_item">${item_data['magical_item']}</span></br>To create your character sheet, use the <a href="https://www.dndbeyond.com/characters/builder#/randomize">DnDBeyond Character Creator</a> on Randomize.</p>`;
+    let output = `<p>You have <span id="sentimental_magic_item_d100">${item_data['sentimental_magic_item_d100']}</span><br /><br />and<br /><br /><span id="magical_item">${item_data['magical_item']}</span></p>`;
     document.getElementById("printer").innerHTML = output;
 }
 
