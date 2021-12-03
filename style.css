@@ -58,3 +58,9 @@ button {
 p.items {
     font-size: XXpx;
 }
+.printer {
+  border: none;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  margin-left: 50px;
+}
