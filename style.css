@@ -55,3 +55,6 @@ button {
   font-size: 16px;
   font-family: "American Typewriter";
 }
+p.items {
+    font-size: XXpx;
+}
