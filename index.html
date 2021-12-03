@@ -9,10 +9,39 @@
         <center><img src="https://annesblursedcreations.github.io/Generator/RGAheader.gif" alt="Randomly Generated Adventures" height="200">
     </head>
     <body>
-        <div id="buttons" class="button">
-            <button onclick="create_character()">Character</button>
-            <button onclick="create_items()">Items</button>
-            <button onclick="create_setting()">Setting</button>
+      <div id="character" class="field" style="display:none">
+            <p>
+                You are
+                <span id="determiner"></span>
+                <span id="adjective" class="value"></span>
+                <span id="race" class="value"></span>
+                <span id="character_class" class="value"></span>
+                from
+                <span id="origin" class="value"></span>
+                who
+                <span id="who" class="value"></span>.
+            </p>
+        </div>
+      <div id="items" class="field" style="display:none">
+            <p class="items">
+                You have
+                <span id="sentimental_magic_item_d100" class="value"></span>
+                <br /><br />
+                and
+                <br /><br />
+                <span id="magical_item" class="value"></span>.
+            </p>
+        </div>
+        <div id="setting" class="field" style="display:none">
+            <p>
+                You are in a
+                <span id="atmosphere" class="value"></span>
+                place with
+                <span id="primary" class="value"></span>
+                and
+                <span id="secondary" class="value"></span>.
+                The ground is
+                <span id="ground" class="value"></span>.
         </div></center>
         <div id="printer" align="center"></div>
     </body>
