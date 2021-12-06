@@ -6,13 +6,12 @@
         <script src="jquery-3.6.0.min.js"></script>
         <script src="jquery.csv.js"></script>
         <script src="script.js"></script>
-        <center><img src="https://annesblursedcreations.github.io/Generator/RGAheader.gif" alt="Randomly Generated Adventures" height="200">
     </head>
     <body>
         <div id="buttons">
-            <button id="character_button" onclick="create_character()">Character</button>
-            <button id="item_button" onclick="create_items()">Items</button>
-            <button id="setting_button" onclick="create_setting()">Setting</button>
+            <button id="character_button" onclick="create_character()">My Character Is</button>
+            <button id="item_button" onclick="create_items()">My Items Are</button>
+            <button id="setting_button" onclick="create_setting()">I Am In A</button>
         </div>
         <div id="character" class="field" style="display:none">
             <p>
@@ -27,8 +26,8 @@
                 <span id="who" class="value"></span>.
             </p>
         </div>
-      <div id="items" class="field" style="display:none">
-            <p class="items">
+        <div id="items" class="field" style="display:none">
+            <p>
                 You have
                 <span id="sentimental_magic_item_d100" class="value"></span>
                 <br /><br />

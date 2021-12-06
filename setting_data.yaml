@@ -29,7 +29,7 @@ primary:
 -   A small village
 -   A labyrinth
 -   A volcano
--   A river that runs backwards
+-   Something large embedded in the ground
 
 secondary:
 -   A scattering of stones
@@ -85,3 +85,20 @@ ground:
 -   Snow
 -   Ice
 -   Snow and ice
+
+water:
+-   A meandering stream
+-   Many tiny brooks
+-   A wide rushing river
+-   A pool
+-   A pond
+-   A lake or something larger
+-   Some hotsprings
+-   A geyser or fountain
+-   A swamp
+-   Clinging dew
+-   None
+-   None
+-   None
+-   None
+-   None

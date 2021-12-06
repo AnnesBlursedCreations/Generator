@@ -1,60 +1,64 @@
 body {
-    background-color:#008037;
-    margin: 0px auto;
+    background-color: rgba(0, 0, 0, .7);
+    font-family: "Raleway";
+    margin: 0px;
     overflow: hidden;
-    font-size: 40px;
-    font-family: "Luminari", "Times new roman";
-}
-
-p {
-    color: #FFFFFF;
-}
-
-span#adjective {
-    color: #C6F198;
-}
-span#race {
-    color: #C6F198;
-}
-span#character_class {
-    color: #C6F198;
-}
-span#origin {
-    color: #C6F198;
-}
-span#who {
-    color: #C6F198;
-}
-span#sentimental_magic_item_d100 {
-    color: #C6F198;
-}
-span#magical_item {
-    color: #C6F198;
-}
-span#atmosphere {
-    color: #C6F198;
-}
-span#primary {
-    color: #C6F198;
-}
-span#secondary {
-    color: #C6F198;
-}
-span#ground {
-    color: #C6F198;
 }
 
 button {
-  background-color: #024920;
-  border: 1px;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: "American Typewriter";
+    background-color: rgb(30, 200, 100);
+    border-color: rgb(27, 184, 92);
+    border-style: solid;
+    border-width: 0px 1px;
+    box-shadow: none;
+    font-family: "Raleway";
+    font-size: 20px;
+    margin: 2px 0px;
+    padding: 15px 25px;
+    text-align: center;
+    transition: 0.5s;
 }
-p.items {
-    font-size: XXpx;
+
+button#item_button {
+    margin-right: -13px;
+    margin-left: -13px;
+}
+
+button:hover {
+    background-color: rgb(25, 172, 86);
+}
+
+div {
+    margin: auto;
+    padding: 10px 20px;
+    text-align: center;
+    width: 45%;
+}
+
+div#buttons {
+    background-color: rgb(30, 200, 100);
+    border-color: rgb(30, 200, 100);
+    border-radius: 5px 5px 0px 0px;
+    border-style: solid;
+    border-width: 0px 2px;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+p {
+    color: #000;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.value {
+    color: #0bf;
+}
+
+.field {
+    border-color: #000;
+    border-radius: 0px 0px 5px 5px;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px;
 }
