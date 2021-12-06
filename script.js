@@ -69,6 +69,12 @@ function create_setting() {
     document.getElementById("printer").innerHTML = output;
 }
 
+function create_villain() {
+    let setting_data = get_attributes(setting_headers);
+    let output = `<p>You are in a <span id="atmosphere">${setting_data.atmosphere}</span> place with <span id="primary">${setting_data.primary}</span> and <span id="secondary">${setting_data.secondary}</span>.</p>`;
+    document.getElementById("printer").innerHTML = output;
+}
+
 
 function to_title_case(str) {
     return str.replace(
