@@ -9,6 +9,7 @@ const file = "data.csv";
 const character_headers = ["adjective", "race", "character_class", "origin", "who"];
 const item_headers = ["sentimental_magic_item_d100", "magical_item"];
 const setting_headers = ["atmosphere", "primary", "secondary", "ground", "water"];
+const villain_headers = ["villain", "villain_trait"];
 
 // Global csv data dictionary.
 var csv_data = {};
@@ -127,7 +128,20 @@ function create_setting() {
     $("#setting").show();
 }
 
-
+function create_villain() {
+     /**
+     * Fill in the villain data, show the villain fields and hide
+     * everything else/
+     */
+    let setting_data = get_attributes(villain_headers);
+    for (let h = 0; h < villain_headers.length; h++) {
+        let header = villain_headers[h]
+        document.getElementById(header).textContent = setting_data[header];
+    }
+    $("#character").hide();
+    $("#items").hide();
+    $("#setting").show();
+}
 function to_title_case(str) {
     /**
      * Convert a string to title case.
