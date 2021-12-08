@@ -54,7 +54,7 @@ function csv_parser(raw_csv_data) {
         for (let r = 1; r < rows.length; r++) {
             let row_data = rows[r];
             if (row_data[h] != undefined && row_data[h] != "") {
-                csv_data[header].push(row_data[h].toLowerCase());
+                csv_data[header].push(row_data[h]);
             }
         }
     }
