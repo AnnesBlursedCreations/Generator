@@ -1,5 +1,5 @@
 /**
- * Random D&D Generator Script
+ Random D&D Generator Script
  */
 
 //Data file path (relative).
@@ -8,8 +8,10 @@ const file = "data.csv";
 // Headers.
 const character_headers = ["adjective", "race", "character_class", "origin", "who"];
 const item_headers = ["sentimental_magic_item_d100", "magical_item"];
-const setting_headers = ["atmosphere", "primary", "secondary", "ground", "water"];
-const villain_headers = ["villain", "villain_trait"];
+const setting_headers = ["atmosphere", "place", "primary", "secondary"];
+const villain_headers = ["villain_trait"];
+const game_starts_headers = ["game_starts"];
+const twist_headers = ["twist"];
 
 // Global csv data dictionary.
 var csv_data = {};
@@ -91,14 +93,17 @@ function create_character() {
         let header = character_headers[h]
         document.getElementById(header).textContent = character_data[header];
     }
-    $("#character").show();
-    $("#items").hide();
-    $("#setting").hide();
+    $("#character_field").show();
+    $("#items_field").hide();
+    $("#setting_field").hide();
+    $("#villain_field").hide();
+    $("#game_starts_field").hide();
+    $("#twist_field").hide();
 }
 
 
 function create_items() {
-     /**
+    /**
      * Fill in the item data, show the item fields and hide
      * everything else/
      */
@@ -107,14 +112,17 @@ function create_items() {
         let header = item_headers[h]
         document.getElementById(header).textContent = item_data[header];
     }
-    $("#character").hide();
-    $("#items").show();
-    $("#setting").hide();
+    $("#character_field").hide();
+    $("#items_field").show();
+    $("#setting_field").hide();
+    $("#villain_field").hide();
+    $("#game_starts_field").hide();
+    $("#twist_field").hide();
 }
 
 
 function create_setting() {
-     /**
+    /**
      * Fill in the setting data, show the setting fields and hide
      * everything else/
      */
@@ -123,25 +131,72 @@ function create_setting() {
         let header = setting_headers[h]
         document.getElementById(header).textContent = setting_data[header];
     }
-    $("#character").hide();
-    $("#items").hide();
-    $("#setting").show();
+    $("#character_field").hide();
+    $("#items_field").hide();
+    $("#setting_field").show();
+    $("#villain_field").hide();
+    $("#game_starts_field").hide();
+    $("#twist_field").hide();
 }
 
+
 function create_villain() {
-     /**
+    /**
      * Fill in the villain data, show the villain fields and hide
      * everything else/
      */
-    let setting_data = get_attributes(villain_headers);
+    let villain_data = get_attributes(villain_headers);
     for (let h = 0; h < villain_headers.length; h++) {
         let header = villain_headers[h]
-        document.getElementById(header).textContent = setting_data[header];
+        document.getElementById(header).textContent = villain_data[header];
     }
-    $("#character").hide();
-    $("#items").hide();
-    $("#setting").show();
+    $("#character_field").hide();
+    $("#items_field").hide();
+    $("#setting_field").hide();
+    $("#villain_field").show();
+    $("#game_starts_field").hide();
+    $("#twist_field").hide();
 }
+
+
+function create_game_starts() {
+    /**
+     * Fill in the game starts data, show the game starts fields and hide
+     * everything else/
+     */
+    let game_starts_data = get_attributes(game_starts_headers);
+    for (let h = 0; h < game_starts_headers.length; h++) {
+        let header = game_starts_headers[h]
+        document.getElementById(header).textContent = game_starts_data[header];
+    }
+    $("#character_field").hide();
+    $("#items_field").hide();
+    $("#setting_field").hide();
+    $("#villain_field").hide();
+    $("#game_starts_field").show();
+    $("#twist_field").hide();
+}
+
+
+function create_twist() {
+    /**
+     * Fill in the twist data, show the twist fields and hide
+     * everything else/
+     */
+    let twist_data = get_attributes(twist_headers);
+    for (let h = 0; h < twist_headers.length; h++) {
+        let header = twist_headers[h]
+        document.getElementById(header).textContent = twist_data[header];
+    }
+    $("#character_field").hide();
+    $("#items_field").hide();
+    $("#setting_field").hide();
+    $("#villain_field").hide();
+    $("#game_starts_field").hide();
+    $("#twist_field").show();
+}
+
+
 function to_title_case(str) {
     /**
      * Convert a string to title case.

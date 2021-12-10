@@ -1,60 +1,63 @@
+html {
+    overflow: scroll;
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     background-color:#008037;
-    margin: 0px auto;
-    overflow: hidden;
     font-size: 40px;
     font-family: "Luminari", "Times new roman";
+    margin: 0px auto;
+    text-align: center;
+    transition: 0.5s;
 }
 
-p {
-    color: #FFFFFF;
+img#header {
+    padding: 0px;
+    margin: 0px auto;
 }
 
-span#adjective {
-    color: #C6F198;
-}
-span#race {
-    color: #C6F198;
-}
-span#character_class {
-    color: #C6F198;
-}
-span#origin {
-    color: #C6F198;
-}
-span#who {
-    color: #C6F198;
-}
-span#sentimental_magic_item_d100 {
-    color: #C6F198;
-}
-span#magical_item {
-    color: #C6F198;
-}
-span#atmosphere {
-    color: #C6F198;
-}
-span#primary {
-    color: #C6F198;
-}
-span#secondary {
-    color: #C6F198;
-}
-span#ground {
-    color: #C6F198;
+div#buttons {
+    margin-top: -24px
 }
 
 button {
-  background-color: #024920;
-  border: 1px;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: "American Typewriter";
+    width: 170px;
+    margin: -4px;
 }
+
+p {
+    color: #ffffff;
+}
+
 p.items {
-    font-size: 20px;
+    font-size: 18px;
+}
+
+p#about {
+    font-size: 24px;
+    color: #C6F198;
+}
+
+.value {
+    color: #C6F198;
+    vertical-align: top;
+}
+
+button {
+    background-color: #024920;
+    border: 1px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "American Typewriter";
+}
+
+button:hover {
+    background-color: rgb(25, 172, 86);
+    transition: 0.25s;
 }
