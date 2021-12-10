@@ -58,3 +58,8 @@ button {
 p.items {
     font-size: 20px;
 }
+
+a:link {
+  text-decoration: none;
+  color: #f1f098;
+}
